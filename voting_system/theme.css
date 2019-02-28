@@ -1,0 +1,235 @@
+.container {
+	margin: auto;
+	text-align: center;
+}
+
+#voting-identification {
+	border-radius: 15px;
+    background: gray;
+    padding: 20px; 
+    margin: auto;
+    width: 80%;
+    height: 500px; 
+}
+
+#start {
+	margin-top: 50px;
+	background-color: #008CBA;
+	border: 2px solid #007399;
+	font-size: 24px;
+	padding: 64px 100px;
+	border-radius: 12px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#start:hover {
+    background-color: #007399; /* Green */
+    color: white;
+}
+
+#verify-box {
+	border-radius: 30px;
+	width: 400px;
+	margin: auto;
+	padding: 10px;
+	background-color: lightgray;
+	display: none;
+}
+
+#savefile {
+	margin-top: 10px;
+	background-color: #0066ff;
+	border: 2px solid #0052cc;
+	font-size: 12px;
+	padding: 10px 15px;
+	border-radius: 12px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#savefile:hover {
+    background-color: #0052cc;
+    color: white;
+}
+
+#voting-ballot {
+	  display: none;
+	  border-radius: 15px;
+    background: gray;
+    padding: 20px; 
+    margin: auto;
+    width: 80%;
+    height: 500px; 
+}
+
+.options {
+	margin: auto;
+	position: relative;
+	font-size: 22px;
+  padding: 5px;
+  width: 200px;
+}
+
+/* Customize the label (the container) */
+.candidate {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.candidate input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.candidate:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.candidate input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.candidate input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.candidate .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+#submit {
+	margin-top: 20px;
+	background-color: #008CBA;
+	border: 2px solid #007399;
+	font-size: 12px;
+	padding: 16px 25px;
+	border-radius: 12px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#submit:hover {
+    background-color: #007399; /* Green */
+    color: white;
+}
+
+#voting-receipt {
+	display: none;
+	border-radius: 15px;
+    background: gray;
+    padding: 20px; 
+    margin: auto;
+    width: 80%;
+    height: 500px; 
+}
+
+.key-num-box {
+	position: relative;
+  	display: block;
+  	margin: auto;
+  	background-color: lightblue;
+ 	color: #222;
+ 	border-radius: 50%;
+ 	border: 2px solid black;
+ 	width: 50px;
+ 	height: 50px;
+ 	text-align: center;
+}
+
+.key-num {
+	padding: 30%;
+	margin: auto;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.voting-keys {
+	margin-top: 25px;
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    border: 5px solid black;
+    /*height: 50px;*/
+}
+
+.key-boxes {
+	display: flex;
+	padding: 10px;
+}
+
+.key-qr-box {
+	flex: 50%;
+}
+
+.key-qr {
+	margin: auto;
+	background-color:red;
+	height: 50px;
+	width: 50px;
+}
+
+.key-qr-num {
+	flex: 50%;
+	padding: 15px;
+}
+
+/*#camdemo {
+	display: none;
+}*/
+
+/*.start-box {
+	border-radius: 15px;
+    background: turquoise;
+    padding: 20px; 
+    margin: auto;
+    width: 100px;
+    height: 100px; 
+}*/
+
+/*.start-box {
+	width: 200px;
+	background-color: black;
+}*/
+

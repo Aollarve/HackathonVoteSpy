@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Vote Verification</title>
+      <link rel="stylesheet" type="text/css" href="theme.css">
+<!--       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {'packages':['corechart']});
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+          var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['Work',     11],
+            ['Eat',      2],
+            ['Commute',  2],
+            ['Watch TV', 2],
+            ['Sleep',    7]
+          ]);
+
+          var options = {
+            title: 'My Daily Activities',
+            backgroundColor: '#808080'
+          };
+
+          var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+          chart.draw(data, options);
+        }
+      </script> -->
+    </head>
+    <body>
+      <div class="container">
+        <h1>Voting Verification</h1>
+        <div id="voting-verification-search">
+          <div class="jumbotron">
+            <h2>Vote Key</h2>
+          </div>
+          <form>
+              <input type="text" id="vote-key" name="vote-key"><br>
+              <input type="button" id="search" value="Search"/>
+          </form>
+          <br>
+          <form>
+              <input type="button" id="download" value="Download Vote Dataset"/>
+          </form>
+<!--           <br> -->
+<!--           <form>
+            <input type="button" id="check-results" value="Check Results"/>
+          </form> -->
+
+        </div>
+
+
+        <div id="voting-ballot">
+          <div class="jumbotron">
+            <h3></h3>
+          </div>
+
+          <div id="ballot-box" style="text-align:center;">
+
+            <h2></h2>
+
+            <div class="options">
+              <label class="election">
+                <p class="selection_title" id="selection_title_1">fssffs</p>
+                <p id="selection_1">sffsfsfs</p>
+              </label>
+            </div>
+
+            <div id="e_2" class="options">
+              <label class="election">
+                <p class="selection_title" id="selection_title_2">fssffsfsdgdg</p>
+                <p id="selection_2">sfsfsfsdgdg</p>
+              </label>
+            </div>
+
+            <div id="e_3" class="options">
+              <label class="election">
+                <p class="selection_title" id="selection_title_3">dgdggddgdg</p>
+                <p id="selection_3">dgdgdgdgdg</p>
+              </label>
+            </div>
+
+            <div id="e_4" class="options">
+              <label class="election">
+                <p class="selection_title" id="selection_title_4">dgdgdgdgdggd</p>
+                <p id="selection_4">dggddgdggd</p>
+              </label>
+            </div>
+
+             <div id="e_5" class="options">
+              <label class="election">
+                <p class="selection_title" id="selection_title_5">gdggddgdgdg</p>
+                <p id="selection_5">dgdgdgdgdg</p>
+              </label>
+            </div>
+            
+            <div class="submit">
+              <input type="button" id="goback" value="Back"/>
+            </div>
+
+          </div>
+
+        </div>
+<!-- 
+        <div id="voting-results">
+          <div class="jumbotron">
+            <h3>Voting Results</h3>
+          </div>
+
+          <div id="piechart" style="width: 600px; height: 450px;"></div>
+        </div>
+
+        <div class="footer">
+          <p>&copy Voter Trust</p>
+        </div>
+      
+      </div> -->
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="http://chancejs.com/chance.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+      <script>
+        // You can also require other files to run in this process
+        require('./renderer.js')
+        // require('./camera.js')
+      </script>
+    </body>
+  </html>

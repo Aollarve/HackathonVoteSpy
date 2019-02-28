@@ -1,0 +1,4 @@
+name_election,candidates,write_in_true_false,
+For Mayor of Rochester,Alex Martini;Elizabeth West,true,
+For United States Senator,George Smith;Frank James;Grabielle Sanders,false,
+For President of the United States,Rick Sanchez;Evil Morty,true

@@ -1,0 +1,124 @@
+.container {
+	margin: auto;
+	text-align: center;
+}
+
+#voting-verification-search {
+/*  display: none;*/
+  border-radius: 15px;
+  background: gray;
+  padding: 20px; 
+  margin: auto;
+  width: 80%;
+  height: 500px; 
+}
+
+#vote-key {
+  width: 300px;
+  height: 20px;
+}
+
+#search {
+	margin-top: 50px;
+	background-color: #008CBA;
+	border: 2px solid #007399;
+	font-size: 12px;
+	padding: 20px 50px;
+	border-radius: 12px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#search:hover {
+    background-color: #007399; /* Green */
+    color: white;
+}
+
+#download {
+  margin-top: 15px;
+  background-color: #008CBA;
+  border: 2px solid #007399;
+  font-size: 12px;
+  padding: 20px 20px;
+  border-radius: 12px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#download:hover {
+    background-color: #007399; /* Green */
+    color: white;
+}
+
+#check-results {
+  margin-top: 15px;
+  background-color: #008CBA;
+  border: 2px solid #007399;
+  font-size: 12px;
+  padding: 20px 20px;
+  border-radius: 12px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#check-results:hover {
+    background-color: #007399; /* Green */
+    color: white;
+}
+
+#voting-ballot {
+  display: none;
+  border-radius: 15px;
+  background: gray;
+  padding: 20px; 
+  margin: auto;
+  width: 80%;
+  height: 500px; 
+}
+
+.options {
+  margin: auto;
+  position: relative;
+/*  font-size: 22px;*/
+/*  padding: 10px;*/
+  width: 200px;
+}
+
+.selection_title {
+  font-weight: bold;
+}
+
+#goback {
+  margin-top: 20px;
+  background-color: #008CBA;
+  border: 2px solid #007399;
+  font-size: 12px;
+  padding: 16px 25px;
+  border-radius: 12px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+#goback:hover {
+    background-color: #007399; /* Green */
+    color: white;
+}
+
+
+#voting-results {
+  border-radius: 15px;
+  background: gray;
+  padding: 20px; 
+  margin: auto;
+  width: 80%;
+  height: 500px; 
+}
+
+/*#myChart {
+  width:100%;
+  height:100%;
+  min-height:250px;
+}
+.zc-ref {
+  display: none;
+}*/

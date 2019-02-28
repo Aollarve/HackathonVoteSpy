@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Voting System</title>
+<!--       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+      <link rel="stylesheet" type="text/css" href="theme.css">
+    </head>
+    <body>
+
+    <div class="container">
+      <h1>Voting System</h1>
+      <div id="voting-identification">
+        <div class="jumbotron">
+          <h3>Voter Identification</h3>
+        </div>
+
+        <!--You can change the dimensions of the camera with height and weight, (text align and margin is just for center the image)-->
+        <div class="start-box">
+          <input type="button" id="start" value="Start"/>
+        </div>
+      
+        <div id="verify-box" style="text-align:center;">
+<!--           <input type="button" id="Start" value="Start / Shut down camera"/> -->
+          <div id="camdemo" style="width: 320px; height: 240px; text-align: center; margin: 0 auto;"></div>
+          <br>
+          <div class="verify">
+           <!--  <div>
+              ID: <textarea rows="1" id="text-input" class="voter-id"></textarea>
+            </div> -->
+            <form>
+              ID Number: <input type="text" id="id-num" name="id-num"><br>
+             <!--  <input type="submit" value="Submit"> -->
+              <input type="button" id="savefile" value="Verify"/>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <div id="voting-ballot">
+        <div class="jumbotron">
+          <h3>Ballot</h3>
+        </div>
+
+        <div id="ballot-box" style="text-align:center;">
+
+          <h2>For United States Senator</h2>
+          <div id="cand_1" class="options">
+            <label class="candidate">
+              <p id="candidate_1">Candidate One</p>
+              <input id="candidate1" type="radio">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div id="cand_2" class="options">
+            <label class="candidate">
+              <p id="candidate_2">Candidate One</p>
+              <input id="candidate2" type="radio">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+
+          <div id="cand_3" class="options">
+            <label class="candidate">
+              <p id="candidate_3">Candidate One</p>
+              <input id="candidate3" type="radio">
+              <span class="checkmark"></span>
+            </label>
+          </div>
+<!--           <br> -->
+          <div id="cand_write" class="options">
+            <form>
+              Write-In Candidate: <input type="text" id="write-in" name="write-in"/><br>
+              <!-- <input type="button" id="savefile" value="Verify"/> -->
+            </form>
+          </div>
+
+          <div class="submit">
+            <input type="button" id="submit" value="VOTE"/>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <div id="voting-receipt">
+        <div class="jumbotron">
+          <h3>Voting Receipt</h3>
+        </div>
+
+        <div class="key-num-box">
+          <div class="key-num">4</div>
+        </div>
+
+        <div class="voting-keys">
+          <div class="column">
+            <div class="key-boxes" id="key-1">
+              <div class="key-qr-box">
+                <div class="key-qr"></div>
+              </div>
+              <div class="key-qr-num">1</div>
+            </div>
+            <div class="key-boxes" id="key-2">
+              <div class="key-qr-box">
+                <div class="key-qr"></div>
+              </div>
+              <div class="key-qr-num">2</div>
+            </div>
+            <div class="key-boxes" id="key-3">
+              <div class="key-qr-box">
+                <div class="key-qr"></div>
+              </div>
+              <div class="key-qr-num">3</div>
+            </div>
+            <div class="key-boxes" id="key-4">
+              <div class="key-qr-box">
+                <div class="key-qr"></div>
+              </div>
+              <div class="key-qr-num">4</div>
+            </div>
+            <div class="key-boxes" id="key-5">
+              <div class="key-qr-box">
+                <div class="key-qr"></div>
+              </div>
+              <div class="key-qr-num">5</div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="key-boxes" id="key-6">
+              <div class="key-qr-box">
+                <div class="key-qr"></div>
+              </div>
+              <div class="key-qr-num">6</div>
+            </div>
+            <div class="key-boxes" id="key-7">
+              <div class="key-qr-box">
+                <div class="key-qr"></div>
+              </div>
+              <div class="key-qr-num">7</div>
+            </div>
+            <div class="key-boxes" id="key-8">
+              <div class="key-qr-box">
+                <div class="key-qr"></div>
+              </div>
+              <div class="key-qr-num">8</div>
+            </div>
+            <div class="key-boxes" id="key-9">
+              <div class="key-qr-box">
+                <div class="key-qr"></div>
+              </div>
+              <div class="key-qr-num">9</div>
+            </div>
+            <div class="key-boxes" id="key-10">
+              <div class="key-qr-box">
+                <div class="key-qr"></div>
+              </div>
+              <div class="key-qr-num">10</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer">
+        <p>&copy Voter Trust</p>
+      </div>
+    </div>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://chancejs.com/chance.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+      // require('./camera.js')
+    </script>
+    </body>
+  </html>
